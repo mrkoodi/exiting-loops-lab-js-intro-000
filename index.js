@@ -23,8 +23,8 @@ function keepGoing(array, changeValue, skipValue) {
 
 function findBy(array, findFn) {
       for (var i = 0; i < array.length; i++) {
-        if (typeof array[i] !== findFn)
-        return array[i];
+        if ( array[i] !== findFn)
+        return null;
       }
-      return null;
+      return array[i];
 }
