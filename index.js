@@ -22,9 +22,8 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
-      var findFn = null;
       for (var i = 0; i < array.length; i++) {
-        if (typeof array[i] !== null)
-        
+        if (array[i] !== findFn)
+        return array[i];
       }
 }
